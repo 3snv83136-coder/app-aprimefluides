@@ -94,7 +94,7 @@ export async function GET() {
   return NextResponse.json(
     {
       ok,
-      service: 'app-realisations-ltdb',
+      service: 'app-aprimefluides',
       timestamp: new Date().toISOString(),
       commit: process.env.VERCEL_GIT_COMMIT_SHA?.slice(0, 7) || 'unknown',
       region: process.env.VERCEL_REGION || 'unknown',
